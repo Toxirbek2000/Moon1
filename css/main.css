@@ -1,3 +1,17 @@
+@font-face {
+  font-display: swap;
+  font-family: "Bellefair";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/bellefair-v14-latin-regular.woff2") format("woff2");
+}
+@font-face {
+  font-display: swap;
+  font-family: "Barlow Condensed";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/barlow-condensed-v12-latin-regular.woff2") format("woff2");
+}
 * {
   margin: 0;
   padding: 0;
@@ -7,7 +21,6 @@
   scroll-behavior: smooth;
 }
 
-.container {
-  margin: 0 auto;
-  padding: 0 20px;
+body {
+  font-family: "Barlow Condensed";
 }/*# sourceMappingURL=main.css.map */
