@@ -23,4 +23,412 @@
 
 body {
   font-family: "Barlow Condensed";
+}
+
+.hurley-body {
+  background-image: url(../images/hurley-bg-img.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.hurley-header {
+  display: flex;
+  justify-content: center;
+  height: 85vh;
+}
+
+.hurley-container {
+  margin: 0 auto;
+}
+
+.hurley-hero {
+  display: flex;
+  align-items: center;
+  gap: 100px;
+}
+
+.hurley-content {
+  right: 100px;
+  display: flex;
+  flex-direction: column;
+  gap: 120px;
+  margin-top: 50px;
+}
+
+.hurley-top {
+  display: flex;
+  gap: 24px;
+  margin-bottom: 50px;
+}
+
+.hurley-strong-top {
+  color: white;
+  opacity: 25%;
+  font-family: "Barlow Condensed";
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 33.6px;
+  letter-spacing: 4.7249999046px;
+  text-align: left;
+}
+
+.hurley-meet {
+  font-family: "Barlow Condensed";
+  font-size: 28px;
+  font-weight: 400;
+  line-height: 33.6px;
+  letter-spacing: 4.7249999046px;
+  text-align: left;
+  color: white;
+  text-transform: uppercase;
+}
+
+.site-header {
+  padding: 40px 0 0 55px;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 100%;
+}
+
+.hurley-comander {
+  max-width: 488px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.comander-strong {
+  color: white;
+  opacity: 25%;
+  font-family: "Bellefair";
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 36.67px;
+  text-align: left;
+}
+
+.hurley-title {
+  font-family: "Bellefair";
+  font-size: 56px;
+  font-weight: 400;
+  line-height: 64.18px;
+  text-align: left;
+  color: white;
+  text-transform: uppercase;
+}
+
+.hurley-text {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 32px;
+  text-align: left;
+  color: #D0D6F9;
+  margin-top: 12px;
+}
+
+.space-body-b {
+  background-image: url("../../images/space-bg.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.site-header {
+  padding: 40px 0 0 55px;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.header__nav-wrapper {
+  max-width: 830px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 165px 0 123px;
+  -webkit-backdrop-filter: blur(81.5484542847px);
+          backdrop-filter: blur(81.5484542847px);
+  position: relative;
+}
+.header__nav-wrapper::before {
+  content: "";
+  position: absolute;
+  width: 473px;
+  height: 1px;
+  background-color: #FFFFFF;
+  left: -443px;
+  opacity: 25%;
+}
+@media (max-width: 1375px) {
+  .header__nav-wrapper::before {
+    display: none;
+  }
+}
+
+.header__nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 48px;
+}
+.header__nav a {
+  display: flex;
+  gap: 13px;
+  height: 100%;
+  padding: 38px 0;
+  position: relative;
+}
+.header__nav a::before {
+  transition: all 0.3s;
+  content: "";
+  transition: all 0.5s;
+  position: absolute;
+  width: 100%;
+  border-bottom: 3px solid #FFFFFF;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: 0;
+  transform: scaleX(0);
+  transform-origin: center;
+  transition: transform 0.5s;
+}
+.header__nav a:hover::before {
+  transform: scaleX(1);
+}
+.header__nav a h4 {
+  font-family: "Barlow Condensed";
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19.2px;
+  letter-spacing: 2.7000000477px;
+  color: white;
+}
+.header__nav a p {
+  font-family: "Barlow Condensed";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19.2px;
+  letter-spacing: 2.7000000477px;
+  color: white;
+}
+
+.header__btn-open {
+  display: none;
+}
+
+@media (max-width: 935px) {
+  .space-body-b {
+    background-image: url("../images/spece-body-bg.png");
+    background-size: 100vw 100vh;
+    background-repeat: no-repeat;
+  }
+  .header__nav-wrapper {
+    max-width: 450px;
+    background: rgba(255, 255, 255, 0.0392156863);
+    -webkit-backdrop-filter: blur(81.5484542847px);
+            backdrop-filter: blur(81.5484542847px);
+    padding: 0 48px 0 46px;
+  }
+  .header__nav a h4 {
+    display: none;
+  }
+  .header__nav a p {
+    font-size: 14px;
+    line-height: 16.8px;
+  }
+  .hurley-hero {
+    flex-direction: column;
+  }
+}
+@media (max-width: 768px) {
+  .site-header {
+    padding: 0 0 0 39px;
+    max-width: 768px;
+  }
+}
+@media (max-width: 930px) {
+  .hurley-content {
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 80%;
+    gap: 20px;
+  }
+  .hurley-hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 100px;
+  }
+  .hurley-header {
+    height: 1024px;
+  }
+  .hurley-comander > strong {
+    font-family: "Bellefair";
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 27.5px;
+    text-align: center;
+    text-align: center;
+  }
+  .hurley-comander > h2 {
+    font-family: "Bellefair";
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 45.84px;
+    text-align: center;
+    text-align: center;
+  }
+  .hurley-comander > p {
+    font-family: "Barlow";
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 28px;
+    text-align: center;
+    text-align: center;
+  }
+}
+@media (max-width: 570px) {
+  .hurley-content {
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 59%;
+    padding-bottom: 100px;
+    gap: 20px;
+  }
+  .hurley-body {
+    background-size: 100% 100%;
+  }
+  .hurley-img-pos {
+    width: 177px;
+    height: 222px;
+    overflow: hidden;
+  }
+  .hurley-hero {
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+    margin-top: 100px;
+    flex-direction: column-reverse;
+  }
+  .space-body-b {
+    width: 100%;
+    background-image: url("../../images/space-body-mobile.png");
+    background-size: 100vw 100vh;
+    background-repeat: no-repeat;
+  }
+  .hurley-comander {
+    max-width: 100%;
+    align-items: center;
+    justify-content: center;
+  }
+  .site-header {
+    padding: 24px 24px 0 24px;
+  }
+  .header__nav-wrapper {
+    display: none;
+  }
+  .header__btn-open {
+    display: inline-block;
+    background: transparent;
+    border: none;
+  }
+  .header__logo-link img {
+    width: 40px;
+    height: 40px;
+  }
+}
+.hurley-img {
+  bottom: 30px;
+}
+
+.header__nav-wrapper {
+  max-width: 830px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 165px 0 123px;
+  -webkit-backdrop-filter: blur(81.5484542847px);
+          backdrop-filter: blur(81.5484542847px);
+  position: relative;
+}
+.header__nav-wrapper::before {
+  content: "";
+  position: absolute;
+  width: 473px;
+  height: 1px;
+  background-color: #FFFFFF;
+  left: -443px;
+  opacity: 25%;
+}
+@media (max-width: 1375px) {
+  .header__nav-wrapper::before {
+    display: none;
+  }
+}
+
+.header__nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 48px;
+}
+.header__nav a {
+  display: flex;
+  gap: 13px;
+  height: 100%;
+  padding: 38px 0;
+  position: relative;
+}
+.header__nav a::before {
+  transition: all 0.3s;
+  content: "";
+  transition: all 0.5s;
+  position: absolute;
+  width: 100%;
+  border-bottom: 3px solid #FFFFFF;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: 0;
+  transform: scaleX(0);
+  transform-origin: center;
+  transition: transform 0.5s;
+}
+.header__nav a:hover::before {
+  transform: scaleX(1);
+}
+.header__nav a h4 {
+  font-family: "Barlow Condensed";
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19.2px;
+  letter-spacing: 2.7000000477px;
+  color: white;
+}
+.header__nav a p {
+  font-family: "Barlow Condensed";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19.2px;
+  letter-spacing: 2.7000000477px;
+  color: white;
+}
+
+.header__btn-open {
+  display: none;
 }/*# sourceMappingURL=main.css.map */
