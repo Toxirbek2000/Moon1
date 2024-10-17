@@ -43,6 +43,7 @@ a:active {
   opacity: 0.7;
 }
 
+
 .site-header {
   padding: 40px 0 0 55px;
 }
@@ -111,6 +112,9 @@ a:active {
   transform: scaleX(1);
 }
 .header__nav a h4 {
+
+  font-family: "Barlow Condensed";
+
   font-weight: 700;
   font-size: 16px;
   line-height: 19.2px;
@@ -118,6 +122,9 @@ a:active {
   color: white;
 }
 .header__nav a p {
+
+  font-family: "Barlow Condensed";
+
   font-size: 16px;
   font-weight: 400;
   line-height: 19.2px;
@@ -125,11 +132,19 @@ a:active {
   color: white;
 }
 
+
+.header__btn-open {
+  display: none;
+}
+
+@media (max-width: 935px) {
+
 .header__btn-open, .header__btn-close, .nav-menu {
   display: none;
 }
 
 @media (max-width: 940px) {
+
   .space-body-b {
     background-image: url("../images/spece-body-bg.png");
     background-size: 100vw 100vh;
@@ -159,7 +174,11 @@ a:active {
 @media (max-width: 570px) {
   .space-body-b {
     width: 100%;
+
+    background-image: url("../../images/space-body-mobile.png");
+
     background-image: url("../images/space-body-mobile.png");
+
     background-size: 100vw 100vh;
     background-repeat: no-repeat;
   }
@@ -178,6 +197,120 @@ a:active {
     width: 40px;
     height: 40px;
   }
+
+}
+.moon-body {
+  background-image: url("../images/moon-bg.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.moon-section {
+  margin: 0 auto;
+}
+
+.moon-up-title {
+  width: 582px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 76px;
+  padding: 0 891px 0 166px;
+  gap: 28px;
+}
+
+.up-title-n > p {
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 33.6px;
+  letter-spacing: 4.7249999046px;
+  opacity: 25%;
+  color: white;
+}
+
+.up-title-text > p {
+  white-space: nowrap;
+  font-size: 28px;
+  font-weight: 400;
+  line-height: 33.6px;
+  letter-spacing: 4.7249999046px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+
+.moon-wrapper {
+  margin: 64px 0 148px 0;
+  padding: 0 163px 0 181px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 206px;
+}
+
+.moon-content-wrapper {
+  margin-top: 0;
+  padding-top: 0;
+  width: 445px;
+  gap: 206px;
+}
+
+.cosmic-list {
+  width: 285px;
+  height: 34px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.cosmic-list-item a {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19.2px;
+  letter-spacing: 2.7000000477px;
+  color: #FFFFFF;
+  display: flex;
+  gap: 13px;
+  height: 100%;
+  padding: 15px 0;
+  position: relative;
+}
+.cosmic-list-item a::before {
+  transition: all 0.3s;
+  content: "";
+  transition: all 0.5s;
+  position: absolute;
+  width: 100%;
+  border-bottom: 3px solid #FFFFFF;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: 0;
+  transform: scaleX(0);
+  transform-origin: center;
+  transition: transform 0.5s;
+}
+.cosmic-list-item a:hover::before {
+  transform: scaleX(1);
+}
+
+.moon-title {
+  width: 333px;
+  height: 115px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  margin-top: 37px;
+  font-size: 100px;
+  font-weight: 400;
+  line-height: 114.6px;
+  color: #FFFFFF;
+}
+
+.moon-text {
+  width: 356px;
+  font-size: 18px;
+
   .header__btn-open {
     display: block;
     border: none;
@@ -292,10 +425,59 @@ a:active {
 }
 .hero1__title p {
   font-size: 22px;
+
   font-weight: 400;
   line-height: 32px;
   color: #D0D6F9;
 }
+
+
+.information-wrapper {
+  width: 360px;
+  height: 89px;
+  margin-top: 54px;
+  display: flex;
+  border: 2px solid #383B4B;
+  border-right: none;
+  border-bottom: none;
+  border-left: none;
+  align-items: flex-end;
+  justify-content: flex-start;
+  gap: 79px;
+}
+
+.dictance-wrap > p {
+  padding-bottom: 12px;
+  margin-top: 14px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16.8px;
+  letter-spacing: 2.3624999523px;
+  color: #D0D6F9;
+}
+
+.dictance-wrap > strong {
+  font-size: 28px;
+  font-weight: 400;
+  line-height: 32.09px;
+  color: #FFFFFF;
+}
+
+.time-wrap > p {
+  padding-bottom: 12px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16.8px;
+  letter-spacing: 2.3624999523px;
+  text-transform: uppercase;
+  color: #D0D6F9;
+}
+
+.time-wrap > strong {
+  font-size: 28px;
+  font-weight: 400;
+  line-height: 32.09px;
+  color: #FFFFFF;
 
 .hero1__text-box {
   width: 274px;
@@ -399,4 +581,5 @@ a:active {
   .hero1__text-box {
     margin-top: 80px;
   }
+
 }/*# sourceMappingURL=main.css.map */
